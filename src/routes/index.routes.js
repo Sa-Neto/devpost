@@ -5,9 +5,8 @@ import { useContext } from "react"
 import { AuthContext } from "../contexts/auth"
 
 export default function Routes() {
-    const {signed,user} = useContext(AuthContext)
-    const loading = false
-    console.log(user)
+    const {signed,loading} = useContext(AuthContext)
+    
     if (loading) {
         return (
             <View
